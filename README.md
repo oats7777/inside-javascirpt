@@ -121,3 +121,21 @@
   console.log(obj1.full-name) // NaN - full - name 으로 인식하여 undefined - undefined = NaN
 ```
 ## 참조 타입의 특성
+자바스크립트에서 윈시형을 제외한 나머지 모든 값은 객체이다.<br>
+이러한 객체는 자바스크립트에서는 참조타입이고 부른다.<br>
+객체의 모든 연산이 `실제 값`이 아닌 `참조값`으로 처리되기 때문이다.
+```javascript
+  var objA = {
+    name: 'MK'
+  };
+  var objB = objA;
+  
+  console.log(objA.name); // MK
+  console.log(objB.name); // MK
+  
+  objB.name = 'HMK';
+  console.log(objA.name); // HMK
+  console.log(objB.name); // HMK
+```
+위처럼 변수 objA와 objB는 객체 자체를 저장하고 있는것이 아니라,<br>
+생성된 객체를 가르키는 참조값을 저장하고 있다는 것을 확인할 수 있다.
