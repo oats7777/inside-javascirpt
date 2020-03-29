@@ -119,6 +119,5 @@
   obj1['full-name'] = 'MK.Han' // 접근 할려는 프로퍼티가 표현식이거나 예약어일 경우 대괄호 표기법만을 사용해야 한다.
   console.log(obj1['full-name']) // MK.Han
   console.log(obj1.full-name) // NaN - full - name 으로 인식하여 undefined - undefined = NaN
-  
-  
 ```
+## 참조 타입의 특성
